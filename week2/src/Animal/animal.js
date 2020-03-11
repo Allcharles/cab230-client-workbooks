@@ -1,3 +1,6 @@
+/**
+ * IMPORTANT Import this whenever you wish to create a react component
+ */
 import React from "react";
 
 export default function AnimalComponent({ name, number, eats }) {
