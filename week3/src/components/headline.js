@@ -6,7 +6,7 @@ import LikeCounter from "./likeCounter";
 
 export default function Headline({ title }) {
   return (
-    <div>
+    <div className="Headline">
       <h1>{title}</h1>
       <LikeCounter />
     </div>
