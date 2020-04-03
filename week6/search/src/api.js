@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 // UPDATE ME WITH API KEY
-const API_KEY = "cf776c5e31ee4390940b6d4bb267ee08";
+const API_KEY = "";
 
 function getHeadlines(search) {
   const url = `https://newsapi.org/v2/top-headlines?country=au&apiKey=${API_KEY}&q=${search}`;
