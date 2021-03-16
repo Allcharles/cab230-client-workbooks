@@ -1,7 +1,3 @@
-/**
- * IMPORTANT Import this whenever you wish to create a react component
- */
-import React from "react";
 import LikeCounter from "./likeCounter";
 
 export default function Headline({ title }) {
