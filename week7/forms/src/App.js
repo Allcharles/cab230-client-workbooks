@@ -12,8 +12,8 @@ function App() {
       {/* Uncontrolled form */}
       <h2>Uncontrolled Form</h2>
       <form
-        onSubmit={event => {
-          console.log("Uncontrolled onSubmit: ", event.target.elements.name.value);
+        onSubmit={(event) => {
+          console.log("Uncontrolled onSubmit: ", event.target.elements.uncontrolled.value);
           event.preventDefault();
         }}
       >
@@ -25,7 +25,7 @@ function App() {
       {/* Controlled form */}
       <h2>Controlled Form: {controlledInput}</h2>
       <form
-        onSubmit={event => {
+        onSubmit={(event) => {
           event.preventDefault();
         }}
       >
@@ -35,7 +35,7 @@ function App() {
           name="controlled"
           type="text"
           value={controlledInput}
-          onChange={event => {
+          onChange={(event) => {
             const { value } = event.target;
 
             if (/[0-9]/.test(value)) {
